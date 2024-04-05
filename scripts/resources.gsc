@@ -111,8 +111,8 @@ is_test_client()
             - if(self is_test_client())
                 self iprintln("I'm a bot");
     */
-	assert( isDefined( self ) );
-	assert( isPlayer( self ) );
-	
-	return ( ( isDefined( self.pers[ "isBot" ] ) && self.pers[ "isBot" ] ) || isSubStr( self getGuid() + "", "bot" ) );
+    assert( isDefined( self ) );
+    assert( isPlayer( self ) );
+
+    return ( ( isDefined( self.pers[ "isBot" ] ) && self.pers[ "isBot" ] ) || isSubStr( self getGuid() + "", "bot" ) );
 }
