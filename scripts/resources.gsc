@@ -46,6 +46,15 @@ parse_toggler(var)
         self.pers[var] = false;
 }
 
+return_parse(var)
+{
+    /*
+        EX: 
+            - self return_parse("instashoots"); // Returns the value of the parsed items
+    */
+    return self.pers[var];
+}
+
 text_to_bool(var)
 {
     /*
